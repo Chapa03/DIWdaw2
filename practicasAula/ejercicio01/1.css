@@ -1,0 +1,28 @@
+/*
+FUNCIONANDO
+h1 {
+	color: #61EDAD;
+}
+
+h1 {
+	background-color: #67B9E0;
+}
+
+p {
+	color: #67B9E0;
+}
+
+p {
+	background-color: #61EDAD;
+}
+*/
+
+.textoverdefondoazul {
+	color: #61EDAD;
+	background-color: #67B9E0;
+}
+
+.textoazulfondoverde {
+	color: #67B9E0;
+	background-color: #61EDAD;
+}
