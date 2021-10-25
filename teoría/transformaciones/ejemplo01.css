@@ -1,0 +1,34 @@
+body {
+	padding: 0px;
+	margin: 0px;
+}
+
+ul {
+	list-style-position: inside;
+	padding: 0px;
+	width: 100%;
+}
+
+ul li {
+	display: inline-block;
+	height: 50px;
+	width: 18%;
+	font-size: 30px;
+	text-align: center;
+	line-height: 50px;
+	border: 1px solid black;
+	border-radius: 15px;
+	margin: 4px;
+	background-color: blue;
+	color: white;
+	transition:  all 500ms;
+}
+
+ul li:hover{
+	/*transform: skew(5deg, 5deg);*/
+	transform: scale(1.1) translate(0px, 10px);
+	opacity: 0.5;
+	/*transition: transform 500ms;*/
+	transition-property: transform opacity;
+	transition-duration: 500ms, 100ms;
+}
