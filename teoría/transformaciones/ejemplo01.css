@@ -1,6 +1,7 @@
 body {
 	padding: 0px;
 	margin: 0px;
+	font-family: 'Verdana', sans-serif;
 }
 
 ul {
@@ -17,10 +18,11 @@ ul li {
 	text-align: center;
 	line-height: 50px;
 	border: 1px solid black;
-	border-radius: 15px;
+	border-radius: 20px;
 	margin: 4px;
-	background-color: blue;
-	color: white;
+	background-color: #73b7bf;
+	color: #bfe0e4;;
+	/*transicion de vuelta*/
 	transition:  all 500ms;
 }
 
@@ -28,7 +30,56 @@ ul li:hover{
 	/*transform: skew(5deg, 5deg);*/
 	transform: scale(1.1) translate(0px, 10px);
 	opacity: 0.5;
+	color: #72b7bf;
+	background-color: #bfe0e4;
 	/*transition: transform 500ms;*/
+
+	/* Transición de movimiento y color */
 	transition-property: transform opacity;
+	/*Con transform:  all Ns; Aplicamos la transición a todos los elementos del css*/
 	transition-duration: 500ms, 100ms;
+	/* --- */
+}	
+
+div.imagen {
+	width: 325px;
+	height: 225px;
+	border: 1px solid gray;
+	float: left;
+	margin-left: 15px;
+	background-size: 100%;
+	border-radius: 50%;
+	/* Para que no 'baile' al ampliar la imagen */
+	background-position: 50% 50%;
+	transition: all 1s;
+	-webkit-transition: all 1s;
+	color: #bfe0e4;
+	text-align: center;
+	line-height: 425px;
+	text-shadow: 0px 0px 3px;
+
+}
+
+.uno {
+	background-image: url('img/img1.jpg');
+}
+
+.dos {
+	background-image: url('img/img2.jpg');
+}
+
+.tres {
+	background-image: url('img/img3.jpg');
+}
+
+.cuatro {
+	background-image: url('img/img4.jpg');
+}
+
+div.imagen:hover {
+	border-radius: 8px;
+	background-size: 125%;
+	background-position: 50% 50%;
+	transition: all 1s;
+	-webkit-transition: all 1s;
 }
