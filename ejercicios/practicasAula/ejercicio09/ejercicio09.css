@@ -1,0 +1,24 @@
+.menu {
+    list-style-image: url('./img/flecha_inactiva.png');
+    list-style-position: inside;
+    width: 200px;
+}
+
+.elemento {
+    border-left: 1px solid black;
+    border-top: 1px solid black;
+    border-right: 1px solid black;
+    background-color: rgba(170, 245, 223, 0.543);
+    padding: 4px;
+    vertical-align: middle;
+}
+
+.elemento:last-child{
+    border-bottom: 1px solid black;
+}
+
+.elemento:hover {
+    list-style-image: url('./img/flecha_activa.png');
+    list-style-position: inside;
+    background-color: #E4E4E4;
+}
