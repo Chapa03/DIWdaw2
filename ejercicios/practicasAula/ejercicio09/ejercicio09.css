@@ -1,24 +1,96 @@
-.menu {
+/*------------ Estilos del menú con list-style-image------------*/
+.uno {
     list-style-image: url('./img/flecha_inactiva.png');
     list-style-position: inside;
     width: 200px;
 }
 
-.elemento {
+.elemUno {
     border-left: 1px solid black;
     border-top: 1px solid black;
     border-right: 1px solid black;
     background-color: rgba(170, 245, 223, 0.543);
-    padding: 4px;
+    padding: 6px;
     vertical-align: middle;
 }
 
-.elemento:last-child{
+.elemUno:last-child{
     border-bottom: 1px solid black;
 }
 
-.elemento:hover {
+.elemUno:hover {
     list-style-image: url('./img/flecha_activa.png');
     list-style-position: inside;
     background-color: #E4E4E4;
+}
+/*-------------------FIN-------------------*/
+
+/*------------ Estilos del menú con list-style-image------------*/
+.dos {
+    width: 200px;
+    list-style-type: none;
+}
+
+.elemDos {
+    border-left: 1px solid black;
+    border-top: 1px solid black;
+    border-right: 1px solid black;
+    background-color: rgba(170, 245, 223, 0.543);
+    padding-top: 7px;
+    padding-bottom: 7px;
+    vertical-align: middle;
+    background-image: url("./img/flecha_inactiva.png");
+	background-repeat: no-repeat;
+	background-position: 7px 7px;
+    padding-left: 30px;
+}
+
+.elemDos:last-child{
+    border-bottom: 1px solid black;
+}
+
+.elemDos:hover {
+    background-image: url("./img/flecha_activa.png");
+	background-repeat: no-repeat;
+	background-position: 7px 7px;
+    padding-left: 30px;
+    background-color: #E4E4E4;
+}
+/*-------------------FIN-------------------*/
+
+
+/*NO NECESARIO PARA EL EJERCICIO*/
+div {
+    margin-left: 15px;
+}
+
+p {
+    margin-left: 7px;
+    padding: 5px;
+    width: 430px;
+    text-align: justify;
+}
+
+.elemUno:last-child {
+    border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 6px;
+}
+
+.elemDos:last-child {
+    border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 6px;
+}
+
+.elemUno:first-child {
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+}
+
+.elemDos:first-child {
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+}
+
+em {
+    text-decoration: underline;
 }
