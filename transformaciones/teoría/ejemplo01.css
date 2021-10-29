@@ -33,7 +33,6 @@ ul li:hover{
 	color: #72b7bf;
 	background-color: #bfe0e4;
 	/*transition: transform 500ms;*/
-
 	/* Transición de movimiento y color */
 	transition-property: transform opacity;
 	/*Con transform:  all Ns; Aplicamos la transición a todos los elementos del css*/
