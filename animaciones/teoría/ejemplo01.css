@@ -1,0 +1,75 @@
+body {
+    font-family: sans-serif;
+}
+
+div.caja {
+    width: 150px;
+    height: 150px;
+    border: 2px dashed rgb(223, 65, 176);
+    border-radius: 8px;
+    background-color: rgb(81, 216, 110);
+    text-align: center;
+    line-height: 150px;
+    font-size: 30px;
+    position: absolute;
+    animation-name: desplazar;
+    animation-direction: normal;
+    animation-iteration-count: infinite;
+}
+
+div.caja:hover{
+    animation-play-state: paused;
+}
+
+div.uno {
+    animation-duration: 7s;
+}
+
+div.dos {
+    animation-duration: 4s;
+    animation-delay: 1s;
+}
+
+@keyframes desplazar {
+    /*
+    from {
+        left: 0px;
+        background-color: rgb(81, 216, 110);
+    }
+    to {
+        left: 85%;
+        background-color: rgb(76, 221, 231);
+        border-radius: 50%;
+    }
+    */
+    0% {
+        top: 5%;
+        left: 25%;
+        background-color: rgb(81, 216, 110);
+        border-radius: 8px;
+    }
+    25% {
+        top: 30%;
+        left: 85%;
+        background-color: rgb(76, 221, 231);
+        border-radius: 50%;
+    }
+    50% {
+        top: 75%;
+        left: 55%;
+        background-color: rgb(81, 216, 110);
+        border-radius: 8px;
+    }
+    75% {
+        top: 55%;
+        left: 5%;
+        background-color: rgb(76, 221, 231);
+        border-radius: 50%;
+    }
+    100% {
+        top: 5%;
+        left: 25%;
+        background-color: rgb(81, 216, 110);
+        border-radius: 8px;
+    }
+}

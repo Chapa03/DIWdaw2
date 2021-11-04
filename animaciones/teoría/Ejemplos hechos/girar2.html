@@ -1,0 +1,67 @@
+<html>
+<head>
+<style>
+
+.container { 
+  width: 178px;
+  height: 178px;  
+  float: left;
+  margin: 80px;
+  perspective: 800px;
+
+}
+
+#card {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  transform-style: preserve-3d;
+  transition: transform 1s;
+}
+#card div {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+#card .front {
+  background: url("caratula.jpg");
+}
+#card .back {
+  background: url("contraportada.jpg");
+  transform: rotateY( 180deg );
+}
+#card:hover {
+  transform: rotateY( 180deg );
+}
+
+.canciones{
+	border: 1px solid black;
+    transform: rotateY( 180deg );
+}
+</style>
+</head>
+<body>
+<h1>Ejemplo transformaciones y transiciones</h1>
+<div class="container">
+  <div id="card">
+    <div class="front"></div>
+    <div class="back"></div>
+  </div>
+</div>
+<div class="container">
+  <div id="card">
+    <div class="front"></div>
+    <div class="back"></div>
+  </div>
+</div>
+<div class="container">
+  <div id="card">
+    <div><img src="beatles.jpg"></div>
+    <div class="canciones">1.- Uno<br>2.- Dos</div>
+  </div>
+</div>
+</body>
+</html>
+
+

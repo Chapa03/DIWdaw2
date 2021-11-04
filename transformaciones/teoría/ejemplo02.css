@@ -1,0 +1,33 @@
+div {
+    width: 300px;
+    height: 200px;
+    border: 1px solid black;
+}
+
+div.contenedor {
+    border: none;
+    margin-top: 50px;
+    margin-left: 100px;
+
+    /*Proximidad al objeto*/
+    perspective: 250px;
+}
+
+div.figura {
+    text-align: center;
+    line-height: 200px;
+    border-radius: 10px;
+    
+    /*  propiedad de transformación. 
+        Pasa al hover para iniciar normal:
+    transform: rotateX(45deg);*/
+    transition: all 0.5s;
+}
+
+div.figura:hover {
+    transform: rotateX(35deg);
+    color: tomato;
+    background-color: cornflowerblue;
+    transition: all 0.5s;
+}
+
