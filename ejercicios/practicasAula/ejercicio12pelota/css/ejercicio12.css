@@ -7,10 +7,10 @@
     background-color: rgba(0, 0, 0, 0);
     position: absolute;
     animation-name: bote, giro;
-    animation-iteration-count: infinite infinite;
-    animation-direction: alternate-reverse alternate;
-    animation-timing-function: ease-in ease-in-out;
-    animation-duration: 1.2s;
+    animation-iteration-count: infinite, infinite;
+    animation-direction: alternate-reverse, normal;
+    animation-timing-function: ease-in, linear;
+    animation-duration: 1.2s, 1.2s;
 }
 
 .pelota:active {
@@ -19,6 +19,7 @@
 
 .sombra {
     height: 1px;
+    box-shadow: 0px 0px 12px;
 }
 
 @keyframes bote {
@@ -36,6 +37,6 @@
 
 @keyframes giro {
     0% { transform: rotate3d(0, 0, 1, 0deg); }
+    50% { transform: rotate3d(0, 0, 0.3, 180deg); }
     100% { transform: rotate3d(0, 0, 1, 360deg); }
   }
-
