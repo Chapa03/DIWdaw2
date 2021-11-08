@@ -1,0 +1,32 @@
+div.personaje {
+    height: 312px;
+    width: 200px;
+    position: absolute;
+    /*background-image: url(./sprite.png);*/
+    background-image: url(./zombie.png);
+    animation-name: caminar, desplazar ;
+    animation-duration: 1.7s, 10s;
+    animation-iteration-count: infinite, infinite;
+    animation-timing-function: steps(10), linear;
+    
+}
+
+@keyframes caminar {
+    from {
+        background-position: 0px 0px;
+    }
+    to{
+        /*sprite.png
+        background-position: -624px 0px;*/
+        background-position: -2000px 0px;
+    } 
+}
+
+@keyframes desplazar {
+    from {
+        left: 0px;
+    }
+    to {
+        left: 800px;
+    }
+}

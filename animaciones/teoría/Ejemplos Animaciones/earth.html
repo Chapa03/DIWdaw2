@@ -1,0 +1,35 @@
+<html>
+<head>
+<style>
+.globe-container
+{
+margin:120px auto;
+/*width:92px;*/
+width:321px;
+height:92px;
+/*border-radius: 50px;*/
+background:url(map.png);
+-webkit-animation: rotar 10s infinite linear;
+/*box-shadow: 0px 5px 15px #888;*/
+}
+.globe
+{
+/*width:92px;
+height:92px;*/
+/*background:url(shadow_highlight.png) top left no-repeat;*/
+}
+@-webkit-keyframes rotar{
+0% {
+background-position:0px 0px;
+}
+100% {
+background-position:-160px 0px;
+}
+
+}
+</style>
+<body>
+<div class="globe-container">
+<div class="globe"></div>
+</div>
+</body>
