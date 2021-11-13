@@ -1,0 +1,11 @@
+body {
+    background-color: #58828B;
+}
+
+.img {
+    height: 480px;
+    width: 450px;
+    border: 6px solid whitesmoke;
+    border-bottom: 35px solid whitesmoke;
+}
+

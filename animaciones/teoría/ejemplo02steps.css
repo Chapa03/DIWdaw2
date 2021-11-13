@@ -8,7 +8,6 @@ div.personaje {
     animation-duration: 1.7s, 10s;
     animation-iteration-count: infinite, infinite;
     animation-timing-function: steps(10), linear;
-    
 }
 
 @keyframes caminar {
@@ -18,7 +17,7 @@ div.personaje {
     to{
         /*sprite.png
         background-position: -624px 0px;*/
-        background-position: -2000px 0px;
+        background-position: 2000px 0px;
     } 
 }
 
