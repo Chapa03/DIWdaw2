@@ -1,0 +1,42 @@
+.pelota {
+    width: 90px;
+    height: 90px;
+    background-image: url("../img/pelota.png");
+    background-repeat: no-repeat;
+    background-size: 90px 90px;
+    background-color: rgba(0, 0, 0, 0);
+    position: absolute;
+    animation-name: bote, giro;
+    animation-iteration-count: infinite, infinite;
+    animation-direction: alternate-reverse, normal;
+    animation-timing-function: ease-in, linear;
+    animation-duration: 1.2s, 1.2s;
+}
+
+.pelota:active {
+    animation-play-state: paused;
+}
+
+.sombra {
+    height: 1px;
+    box-shadow: 0px 0px 12px;
+}
+
+@keyframes bote {
+    from {
+        top: 40%;
+        left: 45%;
+        transition-duration: 0.6s;
+    }
+    to {
+        top: 80%;
+        left: 45%;
+        transition-duration: 1.2s;
+    }
+}
+
+@keyframes giro {
+    0% { transform: rotate3d(0, 0, 1, 0deg); }
+    50% { transform: rotate3d(0, 0, 0.3, 180deg); }
+    100% { transform: rotate3d(0, 0, 1, 360deg); }
+  }

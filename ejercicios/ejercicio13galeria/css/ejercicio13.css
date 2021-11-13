@@ -1,0 +1,132 @@
+body {
+    background-color: #FEF5ED;
+}
+
+.contenedor {
+    display: flex;
+    justify-content: center;
+}
+
+.mesa {
+    margin: 0 auto;
+    position: absolute;
+    background-image: url('../img/fondo.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 90%;
+    height: 99%;
+}
+
+.img {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    height: 230px;
+    width: 200px;
+    border: 8px solid whitesmoke;
+    border-top: 14px solid whitesmoke;
+    border-bottom: 40px solid whitesmoke;
+}
+
+.uno {
+    left: 28%;
+    top: 60%;
+    background: url('../img/1.png');
+    background-size: cover;
+    transform: rotateX(75deg) rotate(30deg);
+    z-index: 2;
+}
+
+.dos {
+    left: 38%;
+    top: 58%;
+    /*
+    left: 580px;
+    top: 420px;
+    */
+    background: url('../img/2.png');
+    background-size: cover;
+    transform: rotateX(75deg) rotate(-20deg);
+    z-index: 5;
+}
+
+.tres {
+    left: 45%;
+    top: 54%;
+    background: url('../img/3.png');
+    background-size: cover;
+    transform: rotateX(75deg) rotate(50deg);
+    z-index: 1;
+}
+
+.cuatro {
+    left: 49%;
+    top: 60%;
+    background: url('../img/4.png');
+    background-size: cover;
+    transform: rotateX(75deg) rotate(-10deg);
+    z-index: 4;
+}
+
+.cinco {
+    left: 56%;
+    top: 57%;
+    background: url('../img/5.png');
+    background-size: cover;
+    transform: rotateX(75deg) rotate(15deg);
+    z-index: 3; 
+}
+
+.img:hover {
+    animation: subir, lupa, flotar;
+    animation-duration:0.6s, 1s, 10s;
+    animation-delay: 0s, 0.6s, 1.6s;
+    animation-iteration-count: 1, 1, infinite;
+    animation-timing-function: linear, ease-in-out, linear;
+    z-index: 10;
+}
+
+@keyframes lupa {
+    from {
+        top: 53%;
+    }
+    to {
+        top: 30%;
+        transform: scale(2.2) rotateX(0deg) rotate(0deg);
+    }
+}
+
+@keyframes subir {
+    to {
+        top: 53%;
+    }
+}
+
+@keyframes flotar {
+    0% {
+        top: 30%;
+        transform: scale(2.2) rotateX(0deg) rotateY(0deg) rotate(0deg);
+    }
+    33% {
+        top: 30%;
+        transform: scale(2.22) rotateX(5deg) rotateY(4deg) rotate(3deg);
+    }
+    66% {
+        top: 30%;
+        transform: scale(2.18) rotateX(-5deg) rotateY(-4deg) rotate(-3deg);
+    }
+    100% {
+        top: 30%;
+        transform: scale(2.2) rotateX(0deg) rotateY(0deg) rotate(0deg);
+    }
+}
+
+/*
+NO FUNCIONA
+@keyframes volverUno {to {transform: scale(1) rotateX(75deg) rotateY(0deg) rotate(30deg);} }
+@keyframes volverDos {to {transform: scale(1) rotateX(75deg) rotateY(0deg) rotate(-20deg);} }
+@keyframes volverTres {to {transform: scale(1) rotateX(75deg) rotateY(0deg) rotate(50deg);} }
+@keyframes volverCuatro {to {transform: scale(1) rotateX(75deg) rotateY(0deg) rotate(-10deg);} }
+@keyframes volverCinco {to {transform: scale(1) rotateX(75deg) rotateY(0deg) rotate(15deg);} }
+*/

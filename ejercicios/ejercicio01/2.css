@@ -1,0 +1,39 @@
+.contenedor {
+	margin-left: 3em;
+	margin-right: 3em;
+}
+
+#contenedor {
+	font-family: 'Verdana';
+	line-height: 2em;
+}
+
+.parrafo {
+	color: #3498DB;
+	padding: 7px;
+	text-align: justify;
+}
+
+#parrafo {
+	border: 1px;
+	border-style: solid;
+	border-radius: 8px;
+	border-color: #ECF0F1;
+}
+
+.titulo {
+	color: #5da0a2;
+}
+
+#titulo {
+	font-size: 3em;
+}
+
+#prueba {
+	color: #60EFB8;
+	padding: 12px;
+	margin-left: 50px;
+}
+
+
+
