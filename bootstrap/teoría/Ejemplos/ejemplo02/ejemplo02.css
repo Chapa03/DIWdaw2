@@ -1,0 +1,9 @@
+.titulo {
+    border-radius: 8px;
+}
+
+.row div {
+    border: 1px solid greenyellow;
+    border-radius: 6px;
+    background-color: cadetblue;
+}
