@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="./lib/jquery-3.6.0.min.js"></script>
+    <title>Primera Web jQuery - Selectores</title>
+    <script>
+        //esta primera linea indica que se ejecutara el codigo jQuery
+        //cuando todo el documento haya cargado
+        $(document).ready(function(){
+            //código jquery
+
+            //selección de título y le aplicamos estilo con el método css()
+            $("h1").css("background", "blue");
+            //todos los párrafos
+            $("p").css("color", "green");
+            //los párrafos con la clase .destacado
+            $("p.destacado").css("text-shadow", "0px 0px 4px orange");
+            //elemento con el id #seleccionado
+            $("#seleccionado").css("color", "red");
+            //primer párrafo
+            $("p:first").css("border", "1px solid purple");
+            //eq = equal - el 3er elemento de todas las listas
+            $("ul li:eq(2)").css("background", "green");
+        })
+    </script>
+</head>
+<body>
+    <h1>Esto es el primer ejemplo jQuery</h1>
+
+    <p>Párrafo número 1 de ejemplo para la página</p>
+    <p class="destacado">Párrafo número 2 de ejemplo para la página</p>
+    <p class="destacado">Párrafo número 3 de ejemplo para la página</p>
+
+    <ul >
+        <li>Elemento 1</li>
+        <li id="seleccionado">Elemento 2</li>
+        <li>Elemento 3</li>
+        <li>Elemento 4</li>
+        <li>Elemento 5</li>
+    </ul>
+</body>
+</html>
