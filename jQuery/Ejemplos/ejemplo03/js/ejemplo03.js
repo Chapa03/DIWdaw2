@@ -21,5 +21,8 @@ $(document).ready(function(){
 
     $("div").height("300px");
     //ejemplo de encadenamiento
-    $("div").width("550px").css("background-color", "mintcream").css("color", "darkcyan");
+    $("div")
+        .width("550px")
+        .css("background-color", "mintcream")
+        .css("color", "darkcyan");
 })
