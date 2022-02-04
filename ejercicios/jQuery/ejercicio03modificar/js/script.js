@@ -24,5 +24,9 @@ $(document).ready(function() {
 
 //5. Añadir un nuevo div.module a la página después del último; luego añadir una copia de una de las imágenes existentes dentro del nuevo div.
     
-
+    $nuevoDiv = $(`<div class="module">
+                    <p>Nuevo div con clase module.</p>
+                </div>`);
+    $nuevoDiv.append($("img:first").clone()).insertAfter("div.module:last");
+    
 });
