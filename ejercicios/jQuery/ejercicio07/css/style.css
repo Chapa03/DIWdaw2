@@ -1,0 +1,17 @@
+.menu {
+    width: 150px;
+    background-color: cadetblue;
+    border-radius: 6px;
+    text-align: center;
+    line-height: 2em;
+}
+
+.elemento {
+    background-color: chartreuse;
+    border-radius: 6px;
+    margin: 2px;
+}
+
+.ocultar {
+    display: none;
+}
