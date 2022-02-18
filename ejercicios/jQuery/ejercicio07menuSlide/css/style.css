@@ -1,4 +1,11 @@
+.main {
+    display: flex;
+    justify-content: center;
+    padding-top: 20%;
+}
+
 .menu {
+    color: azure;
     width: 150px;
     background-color: cadetblue;
     border-radius: 6px;
@@ -12,6 +19,17 @@
     margin: 2px;
 }
 
+.elemento :hover {
+    color: coral;
+    transition-duration: 0.8s;
+}
+
 .ocultar {
     display: none;
+}
+
+a {
+    font-weight: bold;
+    text-decoration: none;
+    color: cadetblue;
 }
